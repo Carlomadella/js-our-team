@@ -67,4 +67,10 @@ const createMemberCard = (member) => {
 const renderTeam = (teamMembers) => {
   // creo variabile di tipo stringa, lasciata vuota perchè conterra' tutte le colonne da mostrare
   let cards = '';
+  // creo ciclo for per ciclare l'array così che la stringa cards possa contenere tutte le card create nella funzione precedente
+  for (let i = 0; i < teamMembers.length; i++) {
+    cards += createMemberCard(teamMembers[i]);
+  }
+  // stampo la stringa cards nel document all'interno del div team-members presente nel file HTML
+  document.getElementById('team-members').innerHTML = cards;
 }
