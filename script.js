@@ -47,12 +47,12 @@ const teamMembers = [
 const createMemberCard = (member) => {
   // creo la variabile che contiene la stringa con le istuzioni HTML
   const card = `<div class="col-12 col-md-6 col-lg-4 my-5 px-4">
-                  <div class="team-card row">
+                  <div class="team-card row d-flex flex-wrap bg-dark">
                     <div class="card-image col-4 p-0 m-0">
                       <img src="${member.img}" alt="" class="img-fluid">
                     </div>
-                    <div class="card-text col-8 d-flex bg-dark flex-column py-3 m-0">
-                      <h3>${member.name}</h3>
+                    <div class="card-text col-8 d-flex flex-column m-0">
+                      <h5>${member.name}</h5>
                       <p>${member.role}</p>
                       <a href="#">${member.email}</a>
                     </div>

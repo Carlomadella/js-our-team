@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
 h1{
     color: rgb(203, 71, 93);
 }
 
-h3{
+h5{
     color: #fff;
 }
 
@@ -17,5 +23,23 @@ h3{
 }
 
 .card-text{
-    padding-left: 30px;
+    padding: 20px 30px;
+    font-size: 14px;
+}
+
+img{
+    height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .card-text{
+      padding: 5px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-text{
+      padding: 35px 30px;
+      font-size: 17px;
+    }
 }
