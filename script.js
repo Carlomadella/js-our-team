@@ -58,5 +58,8 @@ const createMemberCard = (member) => {
                     </div>
                   </div>
                 </div>`;
+  console.log(card);
+
+  return card;
 }
 
