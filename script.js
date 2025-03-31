@@ -51,7 +51,7 @@ const createMemberCard = (member) => {
                     <div class="card-image">
                       <img src="${member.img}" alt="">
                     </div>
-                    <div class="card-text d-flex">        
+                    <div class="card-text d-flex bg-dark">        
                       <h3>${member.name}</h3>
                       <p>${member.role}</p>
                       <a href="#">${member.email}</a>
@@ -63,3 +63,8 @@ const createMemberCard = (member) => {
   return card;
 }
 
+// funzione che stampa a schermo il contenuto del mio array di oggetti
+const renderTeam = (teamMembers) => {
+  // creo variabile di tipo stringa, lasciata vuota perchè conterra' tutte le colonne da mostrare
+  let cards = '';
+}
