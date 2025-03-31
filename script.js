@@ -74,3 +74,5 @@ const renderTeam = (teamMembers) => {
   // stampo la stringa cards nel document all'interno del div team-members presente nel file HTML
   document.getElementById('team-members').innerHTML = cards;
 }
+
+renderTeam(teamMembers);
