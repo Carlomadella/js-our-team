@@ -37,8 +37,26 @@ const teamMembers = [
   }
 ];
 
-// creo le variabili utili 
-const nameField = document.getElementById('name');
-const roleField = document.getElementById('role');
-const emailField = document.getElementById('email');
-const imageField = document.getElementById('image');
+// creo le variabili utili (da usare nel bonus)
+// const nameField = document.getElementById('name');
+// const roleField = document.getElementById('role');
+// const emailField = document.getElementById('email');
+// const imageField = document.getElementById('image');
+
+// realizzo la funzione che mi permette di creare le card dei membri del team da stampare a video
+const createMemberCard = (member) => {
+  // creo la variabile che contiene la stringa con le istuzioni HTML
+  const card = `<div class="col-12 col-md-6 col-lg-4">
+                  <div class="team-card">
+                    <div class="card-image">
+                      <img src="${member.img}" alt="">
+                    </div>
+                    <div class="card-text d-flex">        
+                      <h3>${member.name}</h3>
+                      <p>${member.role}</p>
+                      <a href="#">${member.email}</a>
+                    </div>
+                  </div>
+                </div>`;
+}
+
