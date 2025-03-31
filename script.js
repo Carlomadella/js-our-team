@@ -38,10 +38,12 @@ const teamMembers = [
 ];
 
 // creo le variabili utili (da usare nel bonus)
-// const nameField = document.getElementById('name');
-// const roleField = document.getElementById('role');
-// const emailField = document.getElementById('email');
-// const imageField = document.getElementById('image');
+const nameField = document.getElementById('name');
+const roleField = document.getElementById('role');
+const emailField = document.getElementById('email');
+const imageField = document.getElementById('image');
+const button = document.getElementById('send');
+const memberForm = document.getElementById('member-form');
 
 // realizzo la funzione che mi permette di creare le card dei membri del team da stampare a video
 const createMemberCard = (member) => {
@@ -76,3 +78,36 @@ const renderTeam = (teamMembers) => {
 }
 
 renderTeam(teamMembers);
+
+button.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  // recupero i valori inseriti nei campi della form
+  const name = nameField.value;
+  const role = roleField.value;
+  const image = imageField.value;
+
+  // controllo se tutti i campi sono stati compilati
+  if(!name || !role || !image) {
+      alert('Devi compilare tutti i campi');
+      return;
+  }
+
+  // creo l'oggetto del nuovo membro
+  const newMember = {
+      name,
+      role,
+      image
+  }
+
+  // aggiungo il nuovo elemento nell'array
+  teamMembers.push(newMember);
+
+  nameField.value = '';
+  roleField.value = '';
+  imageField.value = '';
+
+  // renderizzo il nuovo team
+  renderTeam(teamMembers);
+
+})

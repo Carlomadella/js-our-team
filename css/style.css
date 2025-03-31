@@ -31,6 +31,27 @@ img{
     height: 100%;
 }
 
+.form-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 500px;
+}
+.my-button{
+    background-color: rgb(190, 190, 190);
+    border: 1px solid black;
+    width: 200px;
+    padding: 5px;
+    transition: 0.3s all;
+}
+
+.my-button:hover{
+    background-color: transparent;
+}
+
+/* BONUS */
 @media screen and (max-width: 992px) {
     .card-text{
       padding: 5px 20px;
