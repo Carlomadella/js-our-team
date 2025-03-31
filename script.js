@@ -37,3 +37,8 @@ const teamMembers = [
   }
 ];
 
+// creo le variabili utili 
+const nameField = document.getElementById('name');
+const roleField = document.getElementById('role');
+const emailField = document.getElementById('email');
+const imageField = document.getElementById('image');
