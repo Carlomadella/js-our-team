@@ -7,3 +7,15 @@
 h1{
     color: rgb(203, 71, 93);
 }
+
+h3{
+    color: #fff;
+}
+
+.card-text p{
+    color: #fff;
+}
+
+.card-text{
+    padding-left: 30px;
+}
